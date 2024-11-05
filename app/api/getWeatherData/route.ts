@@ -3,7 +3,7 @@
 import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
-const WEATHEER_API_KEY = process.env.WEATHER_API_KEY;
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
 export async function GET(request: Request): Promise<NextResponse> {
 
@@ -21,7 +21,7 @@ export async function GET(request: Request): Promise<NextResponse> {
 
   //make API request to fetch weather data for specified city
   const res = await fetch(
-    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}/next7days?unitGroup=us&include=days%2Ccurrent%2Cevents&key=${WEATHEER_API_KEY}&contentType=json`
+    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}/next7days?unitGroup=us&include=days%2Ccurrent%2Cevents&key=${WEATHER_API_KEY}&contentType=json`
   );
 
   // if API request fails, return 500 Internal Server Error
