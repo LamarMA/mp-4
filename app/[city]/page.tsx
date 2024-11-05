@@ -7,7 +7,6 @@ import useSWR from "swr";
 import WeatherCard from "../components/weatherCard";
 import styled from "styled-components";
 import { Weather } from "@/app/interfaces/weather";
-import Home from "../page";
 import Link from "next/link";
 
 const WeatherContentWrapper = styled.main`
