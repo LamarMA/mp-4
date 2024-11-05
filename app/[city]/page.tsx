@@ -60,6 +60,7 @@ export default function CityPage() {
   const days = data?.days || [];
   return (
     <WeatherContentWrapper>
+      <title>Weather App | MP-4</title>
       <CityName>{params.city}</CityName>
       <WeatherCardsContainer>
         {

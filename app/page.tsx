@@ -38,6 +38,7 @@ export default function Home() {
 
   return (
     <StyledDiv>
+      <title>Weather App | MP-4</title>
       <h1> Find the Weather in any city! </h1>
       <p> Enter a city name below to get the current weather </p>
       <input type="text" value={city} placeholder="city name" onChange={(e) => setCity(e.target.value)} />
