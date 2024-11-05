@@ -15,7 +15,7 @@ const WeatherContentWrapper = styled.main`
   justify-content: center;
   flex-direction: column;
   background-color: pink;
-  height: 100vh;
+  height: 100%;
 `;
 
 const CityName = styled.h1`
@@ -38,6 +38,7 @@ const StyledLink = styled(Link)`
   border: darkblue 4px solid;
   padding: 0.5rem 1rem;
   margin: 1rem;
+  color: black;
 `
 
 

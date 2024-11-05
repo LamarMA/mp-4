@@ -10,6 +10,7 @@ const WeatherCardWrapper = styled.div`
   margin: 2rem; 
   width: 200px; 
   border-radius: 10px;
+  color: black;
 `
 
 export default function WeatherCard(props: Weather) {
